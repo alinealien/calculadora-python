@@ -25,11 +25,9 @@ O usuário pode optar por continuar realizando operações ou encerrar a aplica�
 - Digitar "S" para continuar realizando operações.
 - Digitar "N" para sair da aplicação.
 
-<div style="text-align: center;"></div>
-    <img src="image-1.png" alt="alt text">
+<div align="center">
+  <img src="image-1.png" alt="Imagem Calculadora Terminal" width="300px">
 </div>
-
-![alt text](image-1.png)
 
 # Explicação do Código
 

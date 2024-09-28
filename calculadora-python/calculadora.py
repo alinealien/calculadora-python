@@ -50,7 +50,7 @@ def calculadora():
             print(Fore.RED + "\nOperador inválido! Tente novamente.")
             continue
 
-        # Pergunta ao usuário se deseja realizar outra operação:
+        # Pergunta se deseja realizar outra operação:
         repetir = input(Fore.CYAN + "\nDeseja realizar outra operação? (S/N): ").strip().upper()
         # Condição para encerrar a calculadora:
         if repetir == "N":

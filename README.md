@@ -15,18 +15,21 @@ A interface de interação é simples e intuitiva, utilizando comandos de texto 
 Desenvolver uma calculadora em Python que permite realizar operações matemáticas básicas (soma, subtração, multiplicação e divisão) entre dois números.
 
 *Funcionalidade principal:*
+
 O usuário deve ser capaz de inserir dois números e escolher a operação matemática que deseja realizar entre elas.
 
 *Repetição do processo:*
+
 A aplicação deve permitir que o usuário repita as operações quantas vezes quiser, podendo escolher realizar uma nova operação ou repetir uma operação anterior.
 
 *Interação do usuário:*
+
 O usuário pode optar por continuar realizando operações ou encerrar a aplicação, com as seguintes opções:
 - Digitar "S" para continuar realizando operações.
 - Digitar "N" para sair da aplicação.
 
 <div align="center">
-  <img src="image-1.png" alt="Imagem Calculadora Terminal" width="300px">
+  <img src="image-1.png" alt="Imagem Calculadora Terminal" width="400px">
 </div>
 
 # Explicação do Código
@@ -43,7 +46,16 @@ Nas linhas 17 e 18, temos duas variáveis `num1`e `num2` do tipo `float`(número
 
 Nas linhas 24 à 28 é exibido as opções de operações, para que fique claro qual comando poderá ser informado na linha 31, onde temos a variável `operador` onde será guardada o tipo de operação a ser feita na calculadora.
 
-Das linhas 34 à 51 
+Das linhas 34 à 51 utilizei a estrutura de repetição `if`-`elif` para verificar as diferentes condições com base no `operador` inserido, e assim, decidir qual operação matemática executar.
+
+A primeira condição, na linha 34: `if operador == "+":` irá verificar se aquele operador é o símbolo de adição (subtração, multiplicação e divisão), se for verdadeiro, o programa irá executar a operação de soma e armazenar na váriavel `resultado`: `resultado = num1 + num2`.
+
+Na linha 45 adicionei um tratamento de erro caso seja informado o número 0, já que, não podemos dividir um número por zero. Para finalizar, o trecho `else`, caso seja informado um operador não esperado ele irá retornar `Operador inválido! Tente novamente.`.
+
+Finalizando a implementação da calculadora, linha 54, será capturado a resposta caso deseje ser encerrado a calculadora ou ser realizado outra operação.
+
+Entre as linhas 56 à 63, temos a condição para encerrar a calculadora ou realizar outra operação utilizando 
+
 
 # Bibliotecas Utilizadas
 

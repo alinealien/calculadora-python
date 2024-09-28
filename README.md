@@ -4,7 +4,7 @@ Seja Bem-vindo! 👋
 
 Este projeto consiste no desenvolvimento de uma calculadora simples em Python, capaz de realizar as quatro operações matemáticas básicas: *soma*, *subtração*, *multiplicação* e *divisão*. 
 
-A aplicação permite ao usuário inserir dois números e escolher a operação desejada. Após exibir o resultado, o usuário pode optar por realizar outra operação ou encerrar o programa. 
+A aplicação permite ser inserido dois números e escolha da operação desejada. Após exibir o resultado, o usuário pode optar por realizar outra operação ou encerrar o programa. 
 
 A interface de interação é simples e intuitiva, utilizando comandos de texto para continuidade (digitando "S" para continuar ou "N" para sair). 
 
@@ -25,6 +25,10 @@ O usuário pode optar por continuar realizando operações ou encerrar a aplica�
 - Digitar "S" para continuar realizando operações.
 - Digitar "N" para sair da aplicação.
 
+<div style="text-align: center;"></div>
+    <img src="image-1.png" alt="alt text">
+</div>
+
 ![alt text](image-1.png)
 
 # Explicação do Código
@@ -37,9 +41,11 @@ Nas linhas 11, 12 e 13, adicionei um cabeçalho para organizar melhor a calculad
 
 Na linha 16 adicionei um bloco try caso ocorra algo com a entrada informada, ele irá exibir uma mensagem de erro, sendo executado a linha 19 e 20 o except ValueError. 
 
-Nas linhas 17 e 18, temos duas variáveis `num1`e `num2` do tipo float(número com casas decimais) e solicitamos com o `input()` a entrada dos números.
+Nas linhas 17 e 18, temos duas variáveis `num1`e `num2` do tipo `float`(número com casas decimais) e solicitamos com o `input()` a entrada dos números.
 
+Nas linhas 24 à 28 é exibido as opções de operações, para que fique claro qual comando poderá ser informado na linha 31, onde temos a variável `operador` onde será guardada o tipo de operação a ser feita na calculadora.
 
+Das linhas 34 à 51 
 
 # Bibliotecas Utilizadas
 

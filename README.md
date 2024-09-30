@@ -2,11 +2,11 @@
 
 Seja Bem-vindo! 👋 
 
-Este projeto consiste no desenvolvimento de uma calculadora simples em Python, capaz de realizar as quatro operações matemáticas básicas: *soma*, *subtração*, *multiplicação* e *divisão*. 
+Este projeto consiste no desenvolvimento de uma calculadora em Python, capaz de realizar as quatro operações matemáticas básicas: *soma*, *subtração*, *multiplicação* e *divisão*.
 
-A aplicação permite ser inserido dois números e escolha da operação desejada. Após exibir o resultado, o usuário pode optar por realizar outra operação ou encerrar o programa. 
+A aplicação permite ser inserido dois números e escolher da operação desejada. Após exibir o resultado, o usuário pode optar por realizar outra operação ou encerrar o programa.
 
-A interface de interação é simples e intuitiva, utilizando comandos de texto para continuidade (digitando "S" para continuar ou "N" para sair). 
+A interface de interação é simples (via terminal), com estilização de cores para torná-la mais intuitiva.
 
 ## Especificações
 

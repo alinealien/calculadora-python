@@ -1,6 +1,6 @@
 from colorama import Fore, Style, init
 
-# Inicializa o colorama
+# Inicializa o colorama:
 init(autoreset=True)
 
 # Função principal da calculadora:
@@ -27,7 +27,7 @@ def calculadora():
         print(Fore.YELLOW + "[*] Multiplicação")
         print(Fore.YELLOW + "[/] Divisão")
 
-        # Solicitar ao usuário o operador matemático:
+        # Solicita ao usuário o operador matemático:
         operador = input(Fore.GREEN + "\nDigite a operação desejada): ")
 
         # Condição para realizar a operação matemática escolhida:

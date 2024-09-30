@@ -34,28 +34,27 @@ O usuário pode optar por continuar realizando operações ou encerrar a aplica�
 
 # Explicação do Código
 
-Na linha 1 é realizado o import da Biblioteca Colorama, seguido pela sua inicialização na linha 4.
+Na linha 1, é realizado o *import* da biblioteca **Colorama**, seguido pela sua inicialização na linha 4.
 
-Criei uma função principal chamada `calculadora`, na linha7. Adicionei um loop `While`, na linha 9, para que a calculadora fique em execução.
+Criei uma função principal chamada `calculadora` na linha 7. Adicionei um loop `while` na linha 9 para que a calculadora permaneça em execução.
 
-Nas linhas 11, 12 e 13, adicionei um cabeçalho para organizar melhor a calculadora de forma visual. Também podemos ver a utilizadação do `Fore.CYAN` e `Fore.YELLOW` onde é definido a cor do texto.
+Nas linhas 11, 12 e 13, adicionei um cabeçalho para organizar melhor a interface da calculadora de forma visual. Também podemos ver a utilização do `Fore.CYAN` e `Fore.YELLOW` para definir a cor do texto.
 
-Na linha 16 adicionei um bloco try caso ocorra algo com a entrada informada, ele irá exibir uma mensagem de erro, sendo executado a linha 19 e 20 o except ValueError. 
+Na linha 16, adicionei um bloco `try` para capturar exceções no caso de entradas inválidas. Caso ocorra algum erro, ele exibirá uma mensagem de erro e executará o bloco `except ValueError` nas linhas 19 e 20.
 
-Nas linhas 17 e 18, temos duas variáveis `num1`e `num2` do tipo `float`(número com casas decimais) e solicitamos com o `input()` a entrada dos números.
+Nas linhas 17 e 18, temos duas variáveis `num1` e `num2` do tipo `float` (número com casas decimais), e solicitamos, com o `input()`, a entrada desses números.
 
-Nas linhas 24 à 28 é exibido as opções de operações, para que fique claro qual comando poderá ser informado na linha 31, onde temos a variável `operador` onde será guardada o tipo de operação a ser feita na calculadora.
+Nas linhas 24 a 28, são exibidas as opções de operações para que fique claro qual comando poderá ser informado na linha 31, onde a variável `operador` armazenará o tipo de operação a ser realizada pela calculadora.
 
-Das linhas 34 à 51 utilizei a estrutura de repetição `if`-`elif` para verificar as diferentes condições com base no `operador` inserido, e assim, decidir qual operação matemática executar.
+Das linhas 34 a 51, utilizei a estrutura de controle `if`-`elif` para verificar as diferentes condições com base no `operador` inserido, e assim, decidir qual operação matemática executar.
 
-A primeira condição, na linha 34: `if operador == "+":` irá verificar se aquele operador é o símbolo de adição (subtração, multiplicação e divisão), se for verdadeiro, o programa irá executar a operação de soma e armazenar na váriavel `resultado`: `resultado = num1 + num2`.
+A primeira condição, na linha 34: `if operador == "+":`, verifica se o operador inserido é o símbolo de adição (subtração, multiplicação ou divisão). Se for verdadeiro, o programa executa a operação de soma e armazena o resultado na variável `resultado`: `resultado = num1 + num2`.
 
-Na linha 45 adicionei um tratamento de erro caso seja informado o número 0, já que, não podemos dividir um número por zero. Para finalizar, o trecho `else`, caso seja informado um operador não esperado ele irá retornar `Operador inválido! Tente novamente.`.
+Na linha 45, adicionei um tratamento de erro para evitar a divisão por zero, já que não podemos dividir um número por zero. Caso isso aconteça, a mensagem "Erro: divisão por zero não é permitida" será exibida. Para finalizar, o bloco `else` trata operadores não esperados, retornando "Operador inválido! Tente novamente."
 
-Finalizando a implementação da calculadora, linha 54, será capturado a resposta caso deseje ser encerrado a calculadora ou ser realizado outra operação.
+Finalizando a implementação da calculadora, na linha 54, a resposta do usuário sobre continuar ou encerrar a calculadora é capturada e armazenada na variável `repetir`.
 
-Entre as linhas 56 à 63, temos a condição para encerrar a calculadora ou realizar outra operação utilizando 
-
+Entre as linhas 56 e 63, temos a condição para encerrar a calculadora ou realizar outra operação. Utilizei as estruturas de decisão `if` e `elif`. Se o usuário escolher "N", o programa encerrará a calculadora; se escolher "S", ele permitirá outra operação. Caso o usuário insira uma entrada inválida, uma mensagem adequada será exibida. Por fim, temos a função `calculadora()`, que encapsula toda a lógica e inicia o processo quando chamada.
 
 # Bibliotecas Utilizadas
 

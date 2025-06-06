@@ -1,5 +1,6 @@
 from colorama import Fore, Style, init
 
+#Alterando código apenas comentando isso.
 # Inicializa o colorama:
 init(autoreset=True)
 
